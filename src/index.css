@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* HonestInvoice Brand Colors - Professional Invoice Theme */
+    --background: 0 0% 100%;
+    --foreground: 214 27% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 214 27% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 27% 17%;
+
+    /* Primary: Trustworthy Green - Professional invoice color */
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 142 76% 45%;
+    --primary-dark: 142 76% 28%;
+
+    /* Secondary: Clean Gray */
+    --secondary: 214 13% 95%;
+    --secondary-foreground: 214 27% 17%;
+
+    --muted: 214 13% 95%;
+    --muted-foreground: 214 16% 46%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 142 76% 36%;
+
+    --radius: 0.5rem;
+
+    /* HonestInvoice specific colors */
+    --honest-green: 142 76% 36%;
+    --honest-green-light: 142 76% 45%;
+    --honest-green-dark: 142 76% 28%;
+    --honest-blue: 214 84% 56%;
+    --honest-gray: 214 13% 95%;
+    --honest-text: 214 27% 17%;
+
+    /* Gradients for visual appeal */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--honest-green)), hsl(var(--honest-green-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--honest-green)) 0%, hsl(var(--honest-blue)) 100%);
+    
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 214 27% 17%;
+    --sidebar-primary: 142 76% 36%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 142 76% 95%;
+    --sidebar-accent-foreground: 142 76% 36%;
+    --sidebar-border: 214 20% 88%;
+    --sidebar-ring: 142 76% 36%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Keep HonestInvoice green in dark mode */
+    --primary: 142 76% 45%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary-light: 142 76% 55%;
+    --primary-dark: 142 76% 35%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 142 76% 45%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 142 76% 45%;
+
+    /* Dark mode HonestInvoice colors */
+    --honest-green: 142 76% 45%;
+    --honest-green-light: 142 76% 55%;
+    --honest-green-dark: 142 76% 35%;
+    --honest-blue: 214 84% 66%;
+    --honest-gray: 217.2 32.6% 17.5%;
+    --honest-text: 210 40% 98%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--honest-green)), hsl(var(--honest-green-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--honest-green)) 0%, hsl(var(--honest-blue)) 100%);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 142 76% 45%;
+    --sidebar-primary-foreground: 240 5.9% 10%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 142 76% 45%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 142 76% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
