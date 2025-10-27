@@ -1,8 +1,8 @@
-# Honest Billing Application
+# Honest Invoice Web Application
 
 ## Project Overview
 
-This is the Honest Billing application, a modern invoicing and billing system built with React and TypeScript.
+This is the Honest Invoice Web Application, a modern invoicing and billing system built with React and TypeScript.
 
 ## How to Run Locally
 
